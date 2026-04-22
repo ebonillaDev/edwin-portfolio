@@ -2,25 +2,35 @@ import { DATA } from "@/data/resume";
 
 export default function Experience() {
   return (
-    <section className="w-full max-w-2xl mx-auto py-8">
-      <h2 className="text-3xl font-bold mb-8 text-slate-900">Experience</h2>
-      <div className="relative border-l-2 border-slate-200 pl-8">
-        {DATA.experience.map((exp, idx) => (
-          <div
-            key={exp.company}
-            className="relative pb-12 last:pb-0 flex flex-row items-start"
-          >
-            {/* Content column only - Marker column removed */}
-            <div className="flex-1 flex flex-col gap-y-1">
-              <span className="text-md text-slate-700 font-medium">{exp.role}</span>
-              <span className="font-bold text-slate-900 text-lg">{exp.company}</span>
-              <span className="text-xs text-slate-400 font-normal">{exp.period}</span>
-              <ul className="mt-3 space-y-1 pl-0">
-                {exp.points.map((point, pidx) => (
-                  <li key={pidx} className="text-slate-700 text-sm pl-0">{point}</li>
-                ))}
-              </ul>
+    <section className="py-8">
+      <h2 className="text-xl font-bold mb-6 text-slate-900">Experience</h2>
+      <div className="space-y-10 border-l border-slate-100 ml-1 pl-6">
+        {DATA.experience.map((job, index) => (
+          <div key={index} className="flex flex-col relative">
+            {/* Header: Company and Dates */}
+            <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
+              <h3 className="font-bold text-slate-900 text-lg">
+                {job.company}
+              </h3>
+              <span className="text-sm text-slate-500 tabular-nums">
+                {job.period}
+              </span>
             </div>
+            
+            {/* Role Title */}
+            <div className="text-sm font-semibold text-blue-600 mt-1">
+              {job.role}
+            </div>
+            
+            {/* Bullet Points */}
+            <ul className="mt-4 space-y-3">
+              {job.points.map((point, i) => (
+                <li key={i} className="text-sm text-slate-600 leading-relaxed flex gap-2">
+                  <span className="text-slate-300 mt-1.5 h-1 w-1 rounded-full bg-slate-300 shrink-0" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
