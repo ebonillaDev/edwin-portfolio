@@ -4,7 +4,8 @@ export const DATA = {
     contact: {
       email: "ebonilla.dev@gmail.com",
       phone: "678-333-8216",
-      website: "https://ebonilla.dev",
+      website: "https://edwinbonilla.com",
+      resumeUrl: "/Edwin_Bonilla_Resume.pdf",
       socials: [
         {
           name: "GitHub",

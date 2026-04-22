@@ -7,38 +7,57 @@ import Socials from "@/components/Socials";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-white text-slate-900">
-      <div className="max-w-2xl w-full space-y-12"> {/* Increased spacing */}
-        <header className="space-y-2">
-          <h1 className="text-5xl font-extrabold tracking-tight text-black">{DATA.name}</h1>
-          <p className="text-xl text-slate-600 font-medium">Software Engineer</p>
+      <div className="max-w-2xl w-full space-y-12">
+        
+        {/* HERO / BIO SECTION */}
+        <header className="space-y-4">
+          <div className="space-y-2">
+            <h1 className="text-5xl font-extrabold tracking-tight text-black">{DATA.name}</h1>
+            <p className="text-xl text-slate-600 font-medium italic">Software Engineer</p>
+          </div>
+          
+          <p className="text-slate-600 leading-relaxed max-w-prose">
+            {DATA.summary}
+          </p>
+
+          <div className="flex flex-wrap items-center gap-6 pt-2">
+            {/* The Resume Link - Styled for visibility */}
+            <a 
+              href={DATA.contact.resumeUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm font-bold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-blue-600 transition-all"
+            >
+              View Full Resume
+            </a>
+
+            {/* Desktop Socials: hidden on mobile */}
+            <div className="hidden md:block">
+              <Socials />
+            </div>
+          </div>
+
+          {/* Mobile Socials: visible on mobile only */}
+          <div className="md:hidden pt-2">
+            <Socials />
+          </div>
         </header>
 
-        <section className="mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900">{DATA.name}</h1>
-        <p className="mt-4 text-slate-600 leading-relaxed">
-          {DATA.summary}
-        </p>
-        
-        {/* Mobile Socials: visible on mobile, hidden on tablet/desktop */}
-        <div className="mt-6 md:hidden">
-          <Socials />
-        </div>
-      </section>
-
-        <section>
+        {/* CONTENT SECTIONS */}
+        <section className="space-y-4">
           <Experience />
           <Skills />
           <Education />
         </section>
 
       </div>
+
       {/* FOOTER SECTION */}
-      <footer className="mt-24 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+      <footer className="max-w-2xl w-full mt-24 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-slate-400">
           © {new Date().getFullYear()} {DATA.name}
         </p>
         
-        {/* Desktop Socials: hidden on mobile, visible on tablet/desktop */}
         <div className="hidden md:block">
           <Socials />
         </div>
