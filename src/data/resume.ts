@@ -5,6 +5,23 @@ export const DATA = {
       email: "ebonilla.dev@gmail.com",
       phone: "678-333-8216",
       website: "https://ebonilla.dev",
+      socials: [
+        {
+          name: "GitHub",
+          url: "https://github.com/ebonillaDev",
+          icon: "github", 
+        },
+        {
+          name: "LinkedIn",
+          url: "https://linkedin.com/in/edwin-bonilla1",
+          icon: "linkedin",
+        },
+        {
+          name: "Email",
+          url: "mailto:ebonilla.dev@gmail.com",
+          icon: "email",
+        }
+      ],
     },
     summary: "Software Engineer with experience in full-stack development, AI integration, and cloud DevOps. Specialized in React, TypeScript, and modern AI agentic workflows.",
     skills: [
