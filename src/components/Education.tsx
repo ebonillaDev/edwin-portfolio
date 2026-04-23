@@ -22,7 +22,7 @@ export default function Education() {
               <img
                 src={`/icons/${DATA.education.logo}.png`}
                 alt=""
-                className="w-8 h-8 md:hidden opacity-80"
+                className="w-16 h-8 md:hidden opacity-80"
               />
               <h3 className="text-lg font-bold text-slate-900">
                 {DATA.education.school}

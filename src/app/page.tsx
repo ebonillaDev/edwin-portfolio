@@ -1,6 +1,5 @@
 import { DATA } from "@/data/resume";
 import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Socials from "@/components/Socials";
 import TechMarquee from "@/components/TechMarquee";
@@ -55,7 +54,7 @@ export default function Home() {
       </div>
 
       {/* FOOTER SECTION - Sticky on Desktop */}
-      <footer className="w-full max-w-2xl mt-24 pt-8 pb-8 border-t border-slate-100 
+      <footer className="w-full max-w-2xl pt-8 pb-8 border-t border-slate-100 
                  flex flex-col md:flex-row justify-between items-center gap-4
                  md:sticky md:bottom-0 md:bg-white/80 md:backdrop-blur-md">
         <p className="text-sm text-slate-400">

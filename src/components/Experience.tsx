@@ -27,7 +27,7 @@ export default function Experience() {
                     <img
                       src={`/icons/${job.logo}.svg`}
                       alt=""
-                      className="w-6 h-6 flex-shrink-0 md:hidden opacity-80"
+                      className="w-6 h-8 flex-shrink-0 md:hidden opacity-80"
                     />
                   )}
                   <h3 className="text-lg font-bold text-slate-900">
