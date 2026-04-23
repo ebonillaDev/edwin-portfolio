@@ -14,7 +14,7 @@ export default function Home() {
         <header className="space-y-4">
           <div className="space-y-2">
             <h1 className="text-5xl font-extrabold tracking-tight text-black">{DATA.name}</h1>
-            <p className="text-xl text-slate-600 font-medium italic">Software Engineer</p>
+            <p className="text-xl text-slate-600 font-medium bold">Software Engineer</p>
           </div>
 
           <p className="text-slate-600 leading-relaxed max-w-prose">
@@ -46,7 +46,7 @@ export default function Home() {
 
         {/* CONTENT SECTIONS */}
         <section className="space-y-4">
-          <TechMarquee/>
+          <TechMarquee />
           <Experience />
           {/* <Skills /> */}
           <Education />

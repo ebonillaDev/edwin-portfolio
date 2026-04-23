@@ -18,7 +18,7 @@ export default function TechMarquee() {
                                 <img
                                     src={`/icons/tech/${skill.slug}.svg`}
                                     alt={`${skill.name} logo`}
-                                    className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-120"
+                                    className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-120"
                                 />
                                 <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors">
                                     {skill.name}
@@ -34,7 +34,7 @@ export default function TechMarquee() {
                                 <img
                                     src={`/icons/tech/${skill.slug}.svg`}
                                     alt={`${skill.name} logo`}
-                                    className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-120"
+                                    className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-120"
                                 />
                                 <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors">
                                     {skill.name}

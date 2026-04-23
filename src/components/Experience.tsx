@@ -7,13 +7,16 @@ export default function Experience() {
       <h2 className="text-xl font-semibold text-slate-900 mb-8">Experience</h2>
       <div className="space-y-12">
         {DATA.experience.map((job) => (
-          <div key={job.company} className="flex gap-4 items-start">
+          <div key={job.company} className="flex gap-4 items-start group">
             {/* Desktop Logo */}
             {job.logo && (
-              <div
-                className="w-10 h-10 flex-shrink-0 mt-1 text-slate-400 hidden md:block opacity-80 hover:opacity-100 transition-opacity duration-300"
-                dangerouslySetInnerHTML={{ __html: job.logo }}
-              />
+              <div className="hidden md:block mt-1 flex-shrink-0">
+                <img
+                  src={`/icons/${job.logo}.svg`}
+                  alt={`${job.company} logo`}
+                  className="w-10 h-10 object-contain opacity-80 transition-all duration-500 ease-in-out transform group-hover:scale-120 group-hover:opacity-100"
+                />
+              </div>
             )}
 
             <div className="flex-grow">
@@ -21,9 +24,10 @@ export default function Experience() {
                 <div className="flex items-center gap-3">
                   {/* Mobile Logo */}
                   {job.logo && (
-                    <div
-                      className="w-6 h-6 flex-shrink-0 text-slate-400 md:hidden opacity-80"
-                      dangerouslySetInnerHTML={{ __html: job.logo }}
+                    <img
+                      src={`/icons/${job.logo}.svg`}
+                      alt=""
+                      className="w-6 h-6 flex-shrink-0 md:hidden opacity-80"
                     />
                   )}
                   <h3 className="text-lg font-bold text-slate-900">
