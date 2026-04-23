@@ -1,36 +1,52 @@
+// src/components/Experience.tsx
 import { DATA } from "@/data/resume";
 
 export default function Experience() {
   return (
-    <section className="py-8">
-      <h2 className="text-xl font-bold mb-6 text-slate-900">Experience</h2>
-      <div className="space-y-10 border-l border-slate-100 ml-1 pl-6">
-        {DATA.experience.map((job, index) => (
-          <div key={index} className="flex flex-col relative">
-            {/* Header: Company and Dates */}
-            <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
-              <h3 className="font-bold text-slate-900 text-lg">
-                {job.company}
-              </h3>
-              <span className="text-sm text-slate-500 tabular-nums">
-                {job.period}
-              </span>
+    <section className="mt-12">
+      <h2 className="text-xl font-semibold text-slate-900 mb-8">Experience</h2>
+      <div className="space-y-12">
+        {DATA.experience.map((job) => (
+          <div key={job.company} className="flex gap-4 items-start">
+            {/* Desktop Logo */}
+            {job.logo && (
+              <div
+                className="w-10 h-10 flex-shrink-0 mt-1 text-slate-400 hidden md:block opacity-80 hover:opacity-100 transition-opacity duration-300"
+                dangerouslySetInnerHTML={{ __html: job.logo }}
+              />
+            )}
+
+            <div className="flex-grow">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-1">
+                <div className="flex items-center gap-3">
+                  {/* Mobile Logo */}
+                  {job.logo && (
+                    <div
+                      className="w-6 h-6 flex-shrink-0 text-slate-400 md:hidden opacity-80"
+                      dangerouslySetInnerHTML={{ __html: job.logo }}
+                    />
+                  )}
+                  <h3 className="text-lg font-bold text-slate-900">
+                    {job.company}
+                  </h3>
+                </div>
+                <p className="text-sm text-slate-500 tabular-nums">
+                  {job.period}
+                </p>
+              </div>
+
+              <p className="text-sm font-semibold text-blue-600 mb-4">
+                {job.role}
+              </p>
+
+              <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside pl-4">
+                {job.points.map((point, index) => (
+                  <li key={index} className="leading-relaxed">
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
-            
-            {/* Role Title */}
-            <div className="text-sm font-semibold text-blue-600 mt-1">
-              {job.role}
-            </div>
-            
-            {/* Bullet Points */}
-            <ul className="mt-4 space-y-3">
-              {job.points.map((point, i) => (
-                <li key={i} className="text-sm text-slate-600 leading-relaxed flex gap-2">
-                  <span className="text-slate-300 mt-1.5 h-1 w-1 rounded-full bg-slate-300 shrink-0" />
-                  <span>{point}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         ))}
       </div>
