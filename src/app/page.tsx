@@ -3,6 +3,7 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Socials from "@/components/Socials";
+import TechMarquee from "@/components/TechMarquee";
 
 export default function Home() {
   return (
@@ -45,8 +46,9 @@ export default function Home() {
 
         {/* CONTENT SECTIONS */}
         <section className="space-y-4">
+          <TechMarquee/>
           <Experience />
-          <Skills />
+          {/* <Skills /> */}
           <Education />
         </section>
 

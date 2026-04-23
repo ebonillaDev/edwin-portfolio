@@ -28,7 +28,7 @@ export default function Socials() {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-400 hover:text-blue-600 transition-colors"
+          className="text-slate-400 hover:text-blue-600 hover:scale-120 transition-transform duration-300 transition-colors"
           aria-label={social.name}
         >
           {iconMap[social.icon] || social.name}

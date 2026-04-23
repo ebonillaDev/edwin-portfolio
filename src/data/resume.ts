@@ -26,9 +26,19 @@ export const DATA = {
   },
   summary: "Software Engineer with experience in full-stack development, AI integration, and cloud DevOps. Specialized in React, TypeScript, and modern AI agentic workflows.",
   skills: [
-    "React", "TypeScript", "Next.js", "Java", "Spring Boot",
-    "GraphQL", "AWS", "Azure DevOps", "Splunk", "Grafana",
-    "OpenAI API", "Python", "Cucumber", "Jest"
+    { name: "React", slug: "react" },
+    { name: "Next.js", slug: "nextjs" },
+    { name: "TypeScript", slug: "typescript" },
+    { name: "JavaScript", slug: "javascript" },
+    { name: "Spring", slug: "spring" },
+    { name: "GraphQL", slug: "graphql" },
+    { name: "Python", slug: "python" },
+    { name: "MySQL", slug: "mysql" },
+    { name: "HTML", slug: "html" },
+    { name: "Tailwind CSS", slug: "tailwindcss" },
+    { name: "GitHub Copilot", slug: "githubcopilot" },
+    { name: "Jenkins", slug: "jenkins" },
+    { name: "Jest", slug: "jest" },
   ],
   experience: [
     {
