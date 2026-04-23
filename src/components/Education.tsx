@@ -1,20 +1,38 @@
+// src/components/Education.tsx
 import { DATA } from "@/data/resume";
 
 export default function Education() {
   return (
-    <section className="w-full max-w-2xl mx-auto py-8">
-      <h2 className="text-3xl font-bold mb-6 text-slate-900">Education</h2>
-      <div className="border-l-2 border-slate-200 pl-8">
-        <div className="flex flex-col gap-1">
-          <span className="text-md text-slate-700 font-medium">
+    <section className="mt-12 mb-20">
+      <h2 className="text-xl font-semibold text-slate-900 mb-8">Education</h2>
+      <div className="flex gap-4 items-start group"> {/* Added 'group' for the hover effect */}
+        {/* Desktop Logo */}
+        <div className="hidden md:block mt-1 flex-shrink-0">
+          <img
+            src={`/icons/${DATA.education.logo}.png`}
+            alt={`${DATA.education.school} logo`}
+            className="w-16 h-10 object-contain opacity-80 transition-all duration-500 ease-in-out transform group-hover:scale-120 group-hover:opacity-100"
+          />
+        </div>
+
+        <div className="flex-grow">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-1">
+            <div className="flex items-center gap-3">
+              {/* Mobile Logo */}
+              <img
+                src={`/icons/${DATA.education.logo}.png`}
+                alt=""
+                className="w-16 h-8 md:hidden opacity-80"
+              />
+              <h3 className="text-lg font-bold text-slate-900">
+                {DATA.education.school}
+              </h3>
+            </div>
+            <p className="text-sm text-slate-500">{DATA.education.location}</p>
+          </div>
+          <p className="text-sm font-medium text-blue-600">
             {DATA.education.degree}
-          </span>
-          <span className="font-bold text-slate-900 text-lg">
-            {DATA.education.school}
-          </span>
-          <span className="text-xs text-slate-400 font-normal">
-            {DATA.education.location}
-          </span>
+          </p>
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import { DATA } from "@/data/resume";
 import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Socials from "@/components/Socials";
+import TechMarquee from "@/components/TechMarquee";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <header className="space-y-4">
           <div className="space-y-2">
             <h1 className="text-5xl font-extrabold tracking-tight text-black">{DATA.name}</h1>
-            <p className="text-xl text-slate-600 font-medium italic">Software Engineer</p>
+            <p className="text-xl text-slate-600 font-medium bold">Software Engineer</p>
           </div>
 
           <p className="text-slate-600 leading-relaxed max-w-prose">
@@ -45,15 +45,16 @@ export default function Home() {
 
         {/* CONTENT SECTIONS */}
         <section className="space-y-4">
+          <TechMarquee />
           <Experience />
-          <Skills />
+          {/* <Skills /> */}
           <Education />
         </section>
 
       </div>
 
       {/* FOOTER SECTION - Sticky on Desktop */}
-      <footer className="w-full max-w-2xl mt-24 pt-8 pb-8 border-t border-slate-100 
+      <footer className="w-full max-w-2xl pt-8 pb-8 border-t border-slate-100 
                  flex flex-col md:flex-row justify-between items-center gap-4
                  md:sticky md:bottom-0 md:bg-white/80 md:backdrop-blur-md">
         <p className="text-sm text-slate-400">
