@@ -7,7 +7,7 @@ import TechMarquee from "@/components/TechMarquee";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-white text-slate-900">
-      <div className="max-w-2xl w-full space-y-12">
+      <div className="max-w-4xl w-full space-y-12">
 
         {/* HERO / BIO SECTION */}
         <header className="space-y-4">
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
 
       {/* FOOTER SECTION - Sticky on Desktop */}
-      <footer className="w-full max-w-2xl pt-8 pb-8 border-t border-slate-100 
+      <footer className="w-full max-w-4xl pt-8 pb-8 border-t border-slate-100 
                  flex flex-col md:flex-row justify-between items-center gap-4
                  md:sticky md:bottom-0 md:bg-white/80 md:backdrop-blur-md">
         <p className="text-sm text-slate-400">
