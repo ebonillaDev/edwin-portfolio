@@ -4,7 +4,7 @@ import { DATA } from "@/data/resume";
 
 export default function TechMarquee() {
     return (
-        <div className="w-full py-6 overflow-hidden bg-white">
+        <div className="w-full md:py-6 overflow-hidden bg-white">
             <div className="relative flex overflow-hidden">
                 {/* THE WRAPPER: 
           - We use 'w-max' so it expands to fit the content exactly.
