@@ -15,7 +15,7 @@ export default function Home() {
 
         <Sidebar />
 
-        <section className="space-y-20">
+        <section className="space-y-16">
           <TechMarquee />
           <Experience />
           <Education />
