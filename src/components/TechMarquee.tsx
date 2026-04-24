@@ -4,7 +4,7 @@ import { DATA } from "@/data/resume";
 
 export default function TechMarquee() {
     return (
-        <div className="w-full md:py-6 overflow-hidden bg-white">
+        <div className="w-full md:py-6 overflow-hidden bg-white dark:bg-slate-950 transition-colors">
             <div className="relative flex overflow-hidden">
                 {/* THE WRAPPER: 
           - We use 'w-max' so it expands to fit the content exactly.
@@ -19,9 +19,9 @@ export default function TechMarquee() {
                                 <img
                                     src={`/icons/tech/${skill.slug}.svg`}
                                     alt=""
-                                    className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-120"
+                                    className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-120 "
                                 />
-                                <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors">
+                                <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors dark:text-slate-100 dark:group-hover:text-white">
                                     {skill.name}
                                 </span>
                             </div>
@@ -37,7 +37,7 @@ export default function TechMarquee() {
                                     alt=""
                                     className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-120"
                                 />
-                                <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors">
+                                <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors dark:text-slate-100 dark:group-hover:text-white">
                                     {skill.name}
                                 </span>
                             </div>
@@ -46,8 +46,8 @@ export default function TechMarquee() {
                 </div>
 
                 {/* Professional Edge Fades */}
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white dark:from-slate-950 via-white/80 dark:via-slate-950/80 to-transparent z-10" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white dark:from-slate-950 via-white/80 dark:via-slate-950/80 to-transparent z-10" />
             </div>
         </div>
     );

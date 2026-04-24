@@ -14,7 +14,7 @@ export default function Socials() {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 hover:text-blue-600 hover:scale-120 transition-all duration-500"
+            className="text-slate-400 hover:text-blue-600 hover:scale-120 transition-all duration-500 dark:text-slate-100"
             aria-label={social.name}
           >
             {/* Render the Icon component with standard sizing */}
