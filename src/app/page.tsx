@@ -14,7 +14,9 @@ export default function Home() {
         <header className="space-y-4">
           <div className="space-y-2">
             <h1 className="text-5xl font-extrabold tracking-tight text-black">{DATA.name}</h1>
-            <p className="text-xl text-slate-600 font-medium bold">Software Engineer</p>
+            <p className="text-xl text-blue-600 font-semibold tracking-wide">
+              Software Engineer
+            </p>
           </div>
 
           <div className="max-w-3xl">
@@ -23,13 +25,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-6 pt-2">
+          <div className="flex flex-wrap items-center gap-6 pt-4">
             {/* The Resume Link - Styled for visibility */}
             <a
               href={DATA.contact.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-bold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-blue-600 transition-all"
+              className="text-sm font-bold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-blue-600 transition-all hover:scale-120 duration-500"
             >
               View Full Resume
             </a>
