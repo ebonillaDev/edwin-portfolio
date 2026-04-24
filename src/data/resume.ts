@@ -24,7 +24,7 @@ export const DATA = {
       }
     ],
   },
-  summary: "Software Engineer with experience in full-stack development, AI integration, and cloud DevOps. Specialized in React, TypeScript, and modern AI agentic workflows.",
+  summary: "I am a Software Engineer who thrives at the intersection of enterprise reliability and AI innovation. My background at JPMorgan Chase and UPS taught me how to build for millions of users while maintaining a focus on the individual experience.\n\n I specialize in Full-Stack development and AI implementation. Beyond just building interfaces, I am passionate about engineering systems that solve complex problems by bridging the gap between stable architecture and emerging technologies.",
   skills: [
     { name: "React", slug: "react" },
     { name: "Next.js", slug: "nextjs" },
@@ -45,11 +45,12 @@ export const DATA = {
       company: "JPMorgan Chase",
       role: "Software Engineer",
       period: "Feb 2024 — Oct 2025",
+      technologies: ["React", "TypeScript", "GraphQL", "Jest", "Cucumber", "Split.io"],
       points: [
-        "Modernized web applications using React and ADA compliance standards.",
-        "Drove a 33% increase in feature adoption via A/B testing and Split.io.",
-        "Reduced data retrieval times by 20% using GraphQL and persistent querying.",
-        "Achieved 100% test coverage using Jest and Cucumber."
+        "Modernized a legacy enterprise application into a responsive React platform, achieving strict ADA compliance to expand accessibility to a diverse global user base.",
+        "Drove a 33% increase in feature adoption by executing A/B testing via Split.io, translating user analytics into high-conversion UI enhancements.",
+        "Optimized data architecture using GraphQL persistent querying, resulting in a 20% reduction in data retrieval times.",
+        "Achieved 100% test coverage using Jest and Cucumber, significantly increasing deployment confidence and application stability."
       ],
       logo: "chase"
     },
@@ -57,10 +58,12 @@ export const DATA = {
       company: "United Parcel Service (UPS)",
       role: "Software Engineer Co-op",
       period: "Feb 2023 — Feb 2024",
+      technologies: ["Java", "Spring Boot", "OpenAI API", "Azure DevOps", "JUnit", "Postman"],
       points: [
-        "Developed a POC for Microservices Orchestration with OpenAI LLM integration.",
-        "Increased search accuracy by 25% through SEO and Java/Spring Boot optimizations.",
-        "Facilitated Agile development and REST API testing using Postman."
+        "Architected a Microservices Orchestration POC integrating OpenAI LLMs to automate complex service workflows and enhance system intelligence.",
+        "Engineered a Java/Spring Boot integration that increased search accuracy by 25% and slashed 'zero-result' queries by 20% through strategic backend optimization.",
+        "Facilitated Agile development and CI/CD pipelines within an Azure DevOps environment to deliver high-quality software solutions.",
+        "Spearheaded comprehensive REST API testing and debugging using Postman to ensure robust quality assurance."
       ],
       logo: "ups"
     }

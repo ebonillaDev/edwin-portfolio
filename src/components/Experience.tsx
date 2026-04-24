@@ -1,4 +1,5 @@
-// src/components/Experience.tsx
+"use client";
+
 import { DATA } from "@/data/resume";
 
 export default function Experience() {
@@ -27,7 +28,7 @@ export default function Experience() {
                     <img
                       src={`/icons/${job.logo}.svg`}
                       alt=""
-                      className="w-6 h-8 flex-shrink-0 md:hidden opacity-80"
+                      className="w-6 h-6 flex-shrink-0 md:hidden opacity-80"
                     />
                   )}
                   <h3 className="text-lg font-bold text-slate-900">
@@ -42,6 +43,18 @@ export default function Experience() {
               <p className="text-sm font-semibold text-blue-600 mb-4">
                 {job.role}
               </p>
+
+              {/* Technology Tags */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {job.technologies.map((tech) => (
+                  <span 
+                    key={tech} 
+                    className="px-2 py-0.5 bg-slate-100 text-slate-600 text-[11px] font-medium rounded-md border border-slate-200/50"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
               <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside pl-4">
                 {job.points.map((point, index) => (
