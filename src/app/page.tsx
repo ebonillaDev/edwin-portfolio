@@ -17,9 +17,11 @@ export default function Home() {
             <p className="text-xl text-slate-600 font-medium bold">Software Engineer</p>
           </div>
 
-          <p className="text-slate-600 leading-relaxed max-w-prose">
-            {DATA.summary}
-          </p>
+          <div className="max-w-3xl">
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-normal whitespace-pre-line">
+              {DATA.summary}
+            </p>
+          </div>
 
           <div className="flex flex-wrap items-center gap-6 pt-2">
             {/* The Resume Link - Styled for visibility */}
@@ -55,17 +57,19 @@ export default function Home() {
 
       </div>
 
-      {/* FOOTER SECTION - Sticky on Desktop */}
-      <footer className="w-full max-w-4xl pt-8 pb-8 border-t border-slate-100 
-                 flex flex-col md:flex-row justify-between items-center gap-4
-                 md:sticky md:bottom-0 md:bg-white/80 md:backdrop-blur-md">
-        <p className="text-sm text-slate-400">
-          © {new Date().getFullYear()} {DATA.name}
-        </p>
+      <footer className="w-full max-w-4xl pt-16 pb-12 border-t border-slate-100 flex flex-col items-center gap-8 mt-20">
 
-        <div className="hidden md:block">
+        {/* Mobile-only Contact Section: Only appears when Sidebar is hidden */}
+        <div className="flex flex-col items-center gap-4 xl:hidden">
+          <span className="text-[10px] font-bold tracking-[0.3em] text-slate-400 uppercase">
+            Get in Touch
+          </span>
           <Socials />
         </div>
+
+        <p className="text-xs text-slate-400 text-center tracking-widest uppercase">
+          © {new Date().getFullYear()} {DATA.name}
+        </p>
       </footer>
     </main>
   );

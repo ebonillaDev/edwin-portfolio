@@ -24,7 +24,7 @@ export const DATA = {
       }
     ],
   },
-  summary: "Software Engineer with experience in full-stack development, AI integration, and cloud DevOps. Specialized in React, TypeScript, and modern AI agentic workflows.",
+  summary: "I am a Software Engineer who thrives at the intersection of enterprise reliability and AI innovation. My background at JPMorgan Chase and UPS taught me how to build for millions of users while maintaining a focus on the individual experience.\n\n I specialize in Full-Stack development and AI implementation. Beyond just building interfaces, I am passionate about engineering systems that solve complex problems by bridging the gap between stable architecture and emerging technologies.",
   skills: [
     { name: "React", slug: "react" },
     { name: "Next.js", slug: "nextjs" },
