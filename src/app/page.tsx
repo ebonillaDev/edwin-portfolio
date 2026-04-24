@@ -3,6 +3,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Socials from "@/components/Socials";
 import TechMarquee from "@/components/TechMarquee";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
         </header>
 
         {/* CONTENT SECTIONS */}
+        <Sidebar />
         <section className="space-y-4">
           <TechMarquee />
           <Experience />
