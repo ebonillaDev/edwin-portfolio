@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
 }
 
 body {
-  /* In v4, we use standard CSS properties linked to Tailwind variables */
-  background-color: white;
   color: var(--color-slate-900);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }

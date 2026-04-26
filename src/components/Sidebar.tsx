@@ -21,7 +21,7 @@ export default function Sidebar() {
                             key={social.name}
                             href={social.url}
                             target="_blank"
-                            className="relative group/icon text-slate-400 hover:text-blue-600 transition-all duration-300"
+                            className="relative group/icon text-slate-400 dark:text-slate-100 transition-colors hover:text-blue-600 transition-all duration-300"
                         >
                             {/* Halo Effect */}
                             <div className="absolute -inset-2 bg-blue-50 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300 -z-10" />
@@ -41,9 +41,9 @@ export default function Sidebar() {
 
             {/* Location */}
             <div className="flex flex-col items-center gap-3">
-                <Icons.mapPin className="w-5 h-5 text-slate-400" />
+                <Icons.mapPin className="w-5 h-5 text-slate-400 dark:text-slate-100 transition-colors duration-500" />
                 <span
-                    className="text-[10px] font-bold text-slate-400 tracking-[0.3em] uppercase"
+                    className="text-[10px] font-bold text-slate-400 dark:text-slate-100 transition-colors duration-500 tracking-[0.3em] uppercase"
                     style={{ writingMode: 'vertical-rl' }}
                 >
                     {DATA.location}
