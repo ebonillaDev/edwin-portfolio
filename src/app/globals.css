@@ -43,3 +43,47 @@ body {
     transform: translateZ(0);
   }
 }
+
+@media print {
+  /* 1. Force the document to ignore dark mode styles */
+  :root, 
+  .dark, 
+  html, 
+  body {
+    color-scheme: light !important;
+    background-color: white !important;
+    background-image: none !important; /* Removes your radial gradients */
+    color: black !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 2. Neutralize all child elements and Tailwind colors */
+  body * {
+    background-color: transparent !important;
+    color: black !important;
+    border-color: #e2e8f0 !important; /* slate-200 for clean borders */
+    box-shadow: none !important;
+  }
+
+  /* 3. Re-apply a readable blue for your specific brand colors */
+  h2, 
+  .text-blue-500, 
+  .text-sky-400, 
+  [class*="text-sky-"], 
+  [class*="text-blue-"] {
+    color: #1d4ed8 !important; /* blue-700: high contrast for white paper */
+  }
+
+  /* 4. Hide theme toggle */
+  button
+  {
+    display: none !important;
+  }
+
+  /* 5. Ensure links are professional */
+  a {
+    text-decoration: underline;
+    color: black !important;
+  }
+}
