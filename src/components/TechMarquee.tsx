@@ -5,7 +5,7 @@ import { DATA } from "@/data/resume";
 export default function TechMarquee() {
   return (
     <div className="w-full md:py-6 overflow-hidden bg-white dark:bg-slate-950 transition-colors">
-      <div className="relative flex overflow-hidden">
+      <div className="relative flex">
         <div className="flex w-max animate-scroll">
           {/* Reusable list to keep the code DRY */}
           {[1, 2].map((setIndex) => (
@@ -19,8 +19,8 @@ export default function TechMarquee() {
                       w-10 h-10 object-contain opacity-80 transition-all duration-500 transform group-hover:scale-120 group-hover:opacity-100
                       ${skill.slug === "githubcopilot" ? "dark:invert" : ""}
                       ${skill.slug === "mysql" ? "dark:brightness-200 dark:contrast-125" : ""}
-                      ${skill.slug === "jenkins" ? "dark:saturate-150 scale-115" : ""}
-                      ${skill.slug === "html" ? "dark:contrast-110 scale-115" : ""}
+                      ${skill.slug === "jenkins" ? "dark:saturate-150 scale-115 group-hover:scale-135" : ""}
+                      ${skill.slug === "html" ? "dark:contrast-110 scale-115 group-hover:scale-135" : ""}
                     `}
                   />
                   <span className="text-slate-500 text-base font-bold uppercase tracking-widest group-hover:text-slate-900 transition-colors dark:text-slate-100 dark:group-hover:text-white">
