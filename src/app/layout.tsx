@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Edwin Bonilla",
+  title: "Edwin Bonilla | Software Engineer",
   description: "Edwin Bonilla is a software engineer who builds intelligent, enterprise-scale applications, blending technical rigor with a passion for AI-driven innovation.",
   metadataBase: new URL('https://edwinbonilla.com'),
   openGraph: {
-    title: "Edwin Bonilla",
+    title: "Edwin Bonilla | Software Engineer",
     description: "Edwin Bonilla is a software engineer who builds intelligent, enterprise-scale applications, blending technical rigor with a passion for AI-driven innovation.",
     url: "https://edwinbonilla.com",
     siteName: "Edwin Bonilla",
