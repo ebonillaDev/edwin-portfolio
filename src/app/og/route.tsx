@@ -61,10 +61,9 @@ export async function GET(request: NextRequest) {
             
             <p
               style={{
-                fontSize: '32px',
+                fontSize: '50px',
                 fontFamily: 'Geist',
                 color: '#50a2ff',
-                letterSpacing: '0.3em',
                 fontWeight: 'bold',
                 marginTop: '20px',
                 marginRight: 0,
