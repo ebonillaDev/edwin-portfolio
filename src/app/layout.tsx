@@ -14,10 +14,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Edwin Bonilla | Software Engineer",
-  description: "Software Engineer portfolio showcasing experience in AI and full-stack development.",
-  icons: {
-    icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>',
+  title: "Edwin Bonilla",
+  description: "Edwin Bonilla is a software engineer who builds intelligent, enterprise-scale applications, blending technical rigor with a passion for AI-driven innovation.",
+  metadataBase: new URL('https://edwinbonilla.com'),
+  openGraph: {
+    title: "Edwin Bonilla",
+    description: "Edwin Bonilla is a software engineer who builds intelligent, enterprise-scale applications, blending technical rigor with a passion for AI-driven innovation.",
+    url: "https://edwinbonilla.com",
+    siteName: "Edwin Bonilla",
+    images: [
+      {
+        url: "/og",
+        width: 1200,
+        height: 630,
+        alt: "Edwin Bonilla - Software Engineer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Edwin Bonilla | Software Engineer",
+    description: "Edwin Bonilla is a software engineer who builds intelligent, enterprise-scale applications, blending technical rigor with a passion for AI-driven innovation.",
+    images: ["/og"],
   },
 };
 
