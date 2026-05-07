@@ -59,13 +59,7 @@ export default function Experience() {
                 ))}
               </div>
 
-              <ul className="text-sm text-slate-600 dark:text-slate-100 transition-colors duration-500 space-y-2 list-disc list-outside pl-4">
-                {job.points.map((point, index) => (
-                  <li key={index} className="leading-relaxed">
-                    {point}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-base text-slate-600 dark:text-slate-100 transition-colors duration-500 mb-2">{job.summary}</p>
             </div>
           </div>
         ))}
