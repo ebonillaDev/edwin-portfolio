@@ -46,6 +46,7 @@ export const DATA = {
       role: "Software Engineer",
       period: "Feb 2024 — Oct 2025",
       technologies: ["React", "TypeScript", "GraphQL", "Jest", "Cucumber", "Split.io"],
+      summary: "Modernized a legacy web application, building and maintaining critical components used for Chase's frontend. Worked closely with cross-functional teams, including developers, designers, and product managers to implement new features and improve the user experience.",
       points: [
         "Modernized a legacy enterprise application into a responsive React platform, achieving strict ADA compliance to expand accessibility to a diverse global user base.",
         "Drove a 33% increase in feature adoption by executing A/B testing via Split.io, translating user analytics into high-conversion UI enhancements.",
@@ -59,6 +60,7 @@ export const DATA = {
       role: "Software Engineer Co-op",
       period: "Feb 2023 — Feb 2024",
       technologies: ["Java", "Spring Boot", "OpenAI API", "Azure DevOps", "JUnit", "Postman"],
+      summary: "Developed backend services and APIs for UPS's internal tools and systems. Worked on a variety of projects, including a microservices orchestration POC using OpenAI LLMs to automate complex service workflows and enhance system intelligence.",
       points: [
         "Architected a Microservices Orchestration POC integrating OpenAI LLMs to automate complex service workflows and enhance system intelligence.",
         "Engineered a Java/Spring Boot integration that increased search accuracy by 25% and slashed 'zero-result' queries by 20% through strategic backend optimization.",
