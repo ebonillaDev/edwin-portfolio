@@ -75,5 +75,14 @@ export const DATA = {
     degree: "B.S. in Information Technology, Software Development",
     location: "Lawrenceville, GA",
     logo: "ggc"
-  }
+  },
+  projects: [{
+    title: "ServiceSnap",
+    description: "A multi-tenant SaaS platform designed for mechanic shops to manage invoicing and customer workflows.",
+    status: "In Progress",
+    tech: ["Next.js 15", "Prisma 7", "PostgreSQL", "Clerk Auth", "Tailwind CSS"],
+    githubLink: "#", 
+    websiteLink: "#",
+    image: "/images/ServiceSnap.png" // We can add a placeholder image for now
+  }]
 };

@@ -6,6 +6,7 @@ import TechMarquee from "@/components/TechMarquee";
 import Sidebar from "@/components/Sidebar";
 import Socials from "@/components/Socials";
 import ThemeToggle from "@/components/ThemeToggle";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <section className="space-y-16">
           <TechMarquee />
           <Experience />
+          <Projects />
           <Education />
         </section>
 
